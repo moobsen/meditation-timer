@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-grid>
+  <ion-col></ion-col>
+  <ion-col>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-title>
+          Meditation Timer
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+    <ion-content [fullscreen]="true">
+      <ion-label>How long will you meditate?</ion-label>
+      <ion-item>
+        <ion-input type="number" [value]=meditation_time></ion-input>
+        <ion-label>Minutes</ion-label>
+      </ion-item>
+      <ion-button (onClick)="start_meditation()"> Start Meditation</ion-button>
+    </ion-content>
+  </ion-col>
+  <ion-col></ion-col>
+</ion-grid>
