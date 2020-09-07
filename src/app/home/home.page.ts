@@ -17,8 +17,16 @@ export class HomePage {
 
   }
 
-  start_meditation(){
+  delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+  }
+
+  async start_meditation(){
     this.audio.play('bell');
+    console.log("heard that?" + this.meditation_time);
+    await this.delay(this.meditation_time*1000*60);
+    this.audio.play('bell');
+    console.log("well done");
   }
 
 }
