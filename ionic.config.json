@@ -1,5 +1,7 @@
 {
   "name": "meditation-timer",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
