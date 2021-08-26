@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AudioService } from '../services/audio.service';
 import { Insomnia } from '@ionic-native/insomnia/ngx';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -9,6 +10,8 @@ import { Insomnia } from '@ionic-native/insomnia/ngx';
 })
 export class HomePage {
   meditation_time: number = 5;
+  public currentApplicationVersion = environment.appVersion;
+
   
   constructor(
     private audio: AudioService,
