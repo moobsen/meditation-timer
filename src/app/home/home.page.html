@@ -1,24 +1,18 @@
 <ion-content [fullscreen]="true">
-  <ion-grid>
-    <ion-col></ion-col>
-    <ion-col>
-
-      <ion-header [translucent]="true">
-        <ion-toolbar>
-          <ion-title>
-            Meditation Timer v{{currentApplicationVersion}}
-          </ion-title>
-        </ion-toolbar>
-      </ion-header>
+  <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Meditation Timer v{{currentApplicationVersion}}
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
 
 
-      <ion-label>How long will you meditate?</ion-label>
-      <ion-item>
-        <ion-input type="number" [(ngModel)]=meditation_time></ion-input>
-        <ion-label>Minutes</ion-label>
-      </ion-item>
-      <ion-button (click)="start_meditation()"> Start Meditation</ion-button>
-    </ion-col>
-    <ion-col></ion-col>
-  </ion-grid>
+  <ion-label>How long will you meditate?</ion-label>
+  <ion-item>
+    <ion-input type="number" [(ngModel)]=meditation_time></ion-input>
+    <ion-label>Minutes</ion-label>
+  </ion-item>
+  <ion-button (click)="start_meditation()"> Start Meditation</ion-button>
+  <ion-label>Seconds left: {{ seconds_left }}</ion-label>
 </ion-content>

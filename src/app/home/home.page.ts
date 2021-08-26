@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class HomePage {
   meditation_time: number = 5;
+  seconds_left: number = 0;
   public currentApplicationVersion = environment.appVersion;
 
   
@@ -28,6 +29,8 @@ export class HomePage {
   }
 
   async start_meditation(){
+    var ms_left = this.meditation_time * 1000 * 60;
+    this.seconds_left = ms_left/1000; 
     this.insomnia.keepAwake()
       .then(
         () => console.log('stying awake'),
@@ -35,7 +38,11 @@ export class HomePage {
       );
     this.audio.play('bell');
     console.log("heard that?" + this.meditation_time);
-    await this.delay(this.meditation_time * 1000 * 60);
+    while (ms_left > 0){
+      await this.delay(1000);
+      ms_left -= 1000;
+      this.seconds_left = ms_left/1000;
+    }
     this.audio.play('bell');
     console.log("well done");
     this.insomnia.allowSleepAgain()
