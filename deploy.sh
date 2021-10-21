@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync --progress -r ./www/* root@moobsen.com:/var/www/moobsen.com/meditate/
+rsync --progress --delete -r ./www/* root@moobsen.com:/var/www/moobsen.com/meditate/
