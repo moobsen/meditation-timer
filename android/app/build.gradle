@@ -4,6 +4,8 @@ def appProperties = new Properties();
 file("app.properties").withInputStream { appProperties.load(it) }
 
 android {
+
+    namespace 'de.moritzobermeier.meditationTimer'
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "de.moritzobermeier.meditationTimer"
