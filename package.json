@@ -1,6 +1,6 @@
 {
   "name": "meditation-timer",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Moritz Obermeier",
   "homepage": "https://moobsen.com",
   "scripts": {
@@ -14,12 +14,12 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^15.2.10",
-    "@angular/core": "^15.2.10",
-    "@angular/forms": "^15.2.10",
-    "@angular/platform-browser": "^15.2.10",
-    "@angular/platform-browser-dynamic": "^15.2.10",
-    "@angular/router": "^15.2.10",
+    "@angular/common": "^16.2.12",
+    "@angular/core": "^16.2.12",
+    "@angular/forms": "^16.2.12",
+    "@angular/platform-browser": "^16.2.12",
+    "@angular/platform-browser-dynamic": "^16.2.12",
+    "@angular/router": "^16.2.12",
     "@capacitor/android": "^4.2.0",
     "@capacitor/core": "^4.2.0",
     "@ionic-native/core": "^5.36.0",
@@ -29,14 +29,14 @@
     "cordova-plugin-insomnia": "^4.3.0",
     "rxjs": "^7.5.6",
     "tslib": "^2.3.1",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.13.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.2.10",
-    "@angular/cli": "^15.2.10",
-    "@angular/compiler": "^15.2.10",
-    "@angular/compiler-cli": "^15.2.10",
-    "@angular/language-service": "^15.2.10",
+    "@angular-devkit/build-angular": "^16.2.10",
+    "@angular/cli": "^16.2.10",
+    "@angular/compiler": "^16.2.12",
+    "@angular/compiler-cli": "^16.2.12",
+    "@angular/language-service": "^16.2.12",
     "@capacitor/cli": "^4.2.0",
     "@ionic/angular-toolkit": "^7.0.0",
     "@types/node": "^12.20.31",
