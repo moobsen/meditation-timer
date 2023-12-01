@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId "de.moritzobermeier.meditationTimer"
         minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        targetSdk 33
         versionCode appProperties.getProperty("versionCode").toInteger()
         versionName appProperties.getProperty("versionName")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
